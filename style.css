@@ -1,0 +1,44 @@
+body{
+  font-size: 150%;
+  background-color: steelblue;
+}
+
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  max-height: 30%;
+  justify-content: center;
+  align-items: space-between;
+  font-size: 50px;
+
+}
+
+.row{
+  display: flex;
+  max-width: 75%;
+  background-color: whitesmoke;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  width: 50%;
+}
+
+.charBox{
+  display: flex;
+  background-color: lightblue;
+  width: 500px;
+  height: 125px;
+
+}
+
+#calculate{
+  border-radius: 5px;
+  max-width: 100px;
+}

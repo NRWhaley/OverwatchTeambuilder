@@ -18,20 +18,29 @@ header{
 
 .row{
   display: flex;
+  border-radius: 10px;
   max-width: 75%;
   background-color: whitesmoke;
 }
 
 .column{
   display: flex;
+  border-radius: 5px;
   flex-direction: column;
   justify-content: space-evenly;
   float: left;
   width: 50%;
 }
 
+.teamTotal{
+  display: flex;
+  width: 500px;
+}
+
 .charBox{
   display: flex;
+  border-radius: 10px;
+  justify-content: flex-start;
   background-color: lightblue;
   width: 500px;
   height: 125px;

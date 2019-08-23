@@ -53,8 +53,17 @@ header{
 
 .charCol{
   display: flex;
+  justify-content: left;
   flex-direction: column;
   width: 250px;
+}
+
+.heroAdd{
+  width: 50%;
+}
+
+.heroDelete{
+  width: 50%;
 }
 
 #calculate{

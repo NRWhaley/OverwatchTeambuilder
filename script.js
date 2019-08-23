@@ -1,0 +1,3 @@
+function addHero(box, hero){
+
+}

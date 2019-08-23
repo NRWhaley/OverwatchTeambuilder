@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css"/>
-    <script src= "script.js"></script>
+    <script src= "script.js" defer></script>
   </head>
 
   <body>
@@ -16,8 +16,23 @@
           Team One<br>
           <div class="teamTotal" id="teamOneTotal">Avg Damage:<br>Avg Speed<br>Ult Damage:</div>
             <div class="charBox">
-                <div class="charCol">Hero:<br>Damage:<div id="tOnehOneDmg"></div><br>Speed:<br>Ult Damage:</div>
-                  <div class="charCol"><button class="heroAdd" id="herotOnehOne">Add Hero</button><br><button class="heroDelete">Delete Hero</button></div> </div><br>
+              <div class="charCol">
+                Hero:<br>
+                Damage:<div class="HeroDmg">0</div>
+                Speed:<br>Ult Damage:
+              </div>
+              <div class="charCol">
+                  <select class="charSelect">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+
+                  </select><br>
+                  <button class="charDelete">Remove Hero</button>
+              </div>
+              </div>
+              <br>
 
           <div class="charBox">
             <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
@@ -39,23 +54,30 @@
         Team Two<br>
         <div class="teamTotal">Avg Damage:<br>Avg Speed<br>Ult Damage:</div>
         <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div> </div><br>
+          <div class="charCol">Hero:<br>Damage:<div class="HeroDmg">0</div>Speed:<br>Ult Damage:</div>
+          <div class="charCol"><button class="heroAdd">Add Hero</button></div>
+        </div><br>
         <div class="charBox">
           <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div> </div><br>
+          <div class="charCol">select:<br>pic</div>
+        </div><br>
+
         <div class="charBox">
           <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:
-          </div><div class="charCol">select:<br>pic</div> </div><br>
+          </div><div class="charCol">select:<br>pic</div>
+        </div><br>
         <div class="charBox">
           <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div> </div><br>
+          <div class="charCol">select:<br>pic</div>
+        </div><br>
         <div class="charBox">
           <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div> </div><br>
+          <div class="charCol">select:<br>pic</div>
+        </div><br>
         <div class="charBox">
           <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div> </div><br>
+          <div class="charCol">select:<br>pic</div>
+        </div><br>
       </div>
     </div>
 

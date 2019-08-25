@@ -7,7 +7,7 @@ window.onload = function(){
       hero[i].addEventListener('click', addHeroes)
     }
 
-   let ones = document.getElementsByClassName('One')
+   let ones = document.getElementsByClassName('charSelect')
   for(let i = 0; i < ones.length; i++){
     ones[i].addEventListener('click', addOnes);
   }
@@ -33,7 +33,7 @@ function addOnes(){
   let name = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroName')[0];
   let dmg = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroDmg')[0];
 
-
+  console.log(event.target.value)
   name.textContent = '1'
   dmg.textContent = '1'
 

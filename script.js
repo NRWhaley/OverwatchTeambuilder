@@ -5,9 +5,9 @@
 //support Ana, Baptiste, Brigitte, Lucio, Mercy, Moira, Zenyatta
 
 const heroes = [
-  {name: 'Ashe', primary: 160, health: 200 , ultCost: 2240, pic: },
-  {name: 'Ana', primary: 87.5, health: 200, ultCost: 2100, pic: },
-  {name: 'Baptiste', primary: 168.75, health: 200, ultCost: 1960},
+  {name: 'Ashe', primary: 160, health: 200 , ultCost: 2240, pic: undefined},
+  {name: 'Ana', primary: 87.5, health: 200, ultCost: 2100, pic: undefined },
+  {name: 'Baptiste', primary: 168.75, health: 200, ultCost: 1960, pic: undefined},
   {name: 'Bastion',},
   {name: 'Brigitte',},
   {name: 'Doomfist'},
@@ -74,11 +74,22 @@ function clearHeroes(){
 
 }
 
+
+function findChar(char){
+
+  for(let i = 0; i < heroes.length; i++){
+    if(heroes[i].name === char){
+      return heroes[i]
+    }
+  }
+}
+
 function addOnes(){
   let name = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroName')[0];
   let dmg = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroDmg')[0];
-
-  console.log(event.target.value)
+  let char = event.target.value;
+  let character = findChar(char)
+  //console.log(character)
   name.textContent = '1'
   dmg.textContent = '1'
 

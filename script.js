@@ -46,10 +46,24 @@ window.onload = function(){
       hero[i].addEventListener('click', clearHeroes)
     }
 
-   let ones = document.getElementsByClassName('dpsSelect')
-  for(let i = 0; i < ones.length; i++){
-    ones[i].addEventListener('click', addOnes);
+   let dpsHeroes = document.getElementsByClassName('dpsSelect')
+  for(let i = 0; i < dpsHeroes.length; i++){
+    dpsHeroes[i].addEventListener('click', addHeroes);
   }
+
+  let tankHeroes = document.getElementsByClassName('tankSelect')
+
+  for(let i = 0; i < tankHeroes.length; i++){
+    tankHeroes[i].addEventListener('click', addHeroes)
+  }
+
+  let suppHeroes = document.getElementsByClassName('suppSelect')
+
+  for(let i = 0; i < suppHeroes.length; i++){
+    suppHeroes[i].addEventListener('click', addHeroes)
+  }
+
+
 
 
 
@@ -60,15 +74,15 @@ window.onload = function(){
 
 function clearHeroes(){
   let name = event.target.parentElement.parentElement.getElementsByClassName('HeroName')[0];
-  let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroDPS')[0];
-  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroHealth')[0];
-  let heal = event.target.parentElement.parentElement.getElementsByClassName('UltCost')[0]
+  let dps = event.target.parentElement.parentElement.getElementsByClassName('HeroDPS')[0];
+  let health = event.target.parentElement.parentElement.getElementsByClassName('HeroHealth')[0];
+  let ultCost = event.target.parentElement.parentElement.getElementsByClassName('UltCost')[0]
 
 
   name.textContent = '-'
-  dmg.textContent = '-'
-  spd.textContent = '-'
-  heal.textContent = '-'
+  dps.textContent = '-'
+  health.textContent = '-'
+  ultCost.textContent = '-'
 
 
 
@@ -84,12 +98,12 @@ function findChar(char){
   }
 }
 
-function addOnes(){
+function addHeroes(){
   let name = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroName')[0];
   let dps = event.target.parentElement.parentElement.getElementsByClassName('HeroDPS')[0];
   let char = event.target.value;
   let character = findChar(char)
-  //console.log(character)
+  console.log(character)
 
   name.textContent = '1'
   dps.textContent = '1'

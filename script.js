@@ -109,7 +109,7 @@ let ult = event.target.parentElement.parentElement.getElementsByClassName('UltCo
 
   let char = event.target.value;
   let character = findChar(char)
-  console.log(character)
+
 
   name.textContent = character.name
   dps.textContent = character.primary
@@ -118,12 +118,19 @@ let ult = event.target.parentElement.parentElement.getElementsByClassName('UltCo
 
 
 
-
+teamTotals();
 
 
 }
 
+function teamTotals(){
 
+
+let dpsAverages = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroDPS')
+
+console.log(dpsAverages[0])
+
+}
 
 
 

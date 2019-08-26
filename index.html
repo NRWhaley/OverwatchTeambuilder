@@ -9,7 +9,6 @@
     <center>
     <header>
       Overwatch Teambuilder <br>
-      <button id="calculate">Calculate</button>
     </header>
     <div class="row">
       <div class="column">
@@ -71,21 +70,281 @@
               </div>
               <br><br>
 
-          <div class="charBox">
-            <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-            <div class="charCol">select:<br>pic</div> </div><br>
-          <div class="charBox">
-            <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-            <div class="charCol">select:<br>pic</div> </div><br>
-          <div class="charBox">
-            <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-            <div class="charCol">select:<br>pic</div> </div><br>
-          <div class="charBox">
-            <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-            <div class="charCol">select:<br>pic</div> </div><br>
-          <div class="charBox">
-            <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-            <div class="charCol">select:<br>pic</div> </div><br>
+              <div class="charBox">
+                  <div class="charCol">
+                    Hero:<div class="HeroName">-</div>
+                    Damage:<div class="HeroDPS">-</div>
+                    Health:<div class="HeroHealth">-</div>
+                    Ult Cost:<div class="UltCost">-</div>
+                  </div>
+                    <div class="charCol">
+                      DPS
+                      <select class="dpsSelect">
+                        <option value="Ashe">Ashe</option>
+                        <option value="Bastion">Bastion</option>
+                        <option value="Doomfist">Doomfist</option>
+                        <option value="Genji">Genji</option>
+                        <option value="Hanzo">Hanzo</option>
+                        <option value="Junkrat">Junkrat</option>
+                        <option value="Mei">Mei</option>
+                        <option value="Pharah">Pharah</option>
+                        <option value="Reaper">Reaper</option>
+                        <option value="Soldier76">Soldier: 76</option>
+                        <option value="Sombra">Sombra</option>
+                        <option value="Symmetra">Symmetra</option>
+                        <option value="Torbjorn">Torbjorn</option>
+                        <option value="Tracer">Tracer</option>
+                        <option value="Widowmaker">Widowmaker</option>
+
+
+                      </select><br>
+                      Tank
+                        <select class="tankSelect">
+                          <option value="Dva">Dva</option>
+                           <option value="Orisa">Orisa</option>
+                           <option value="Reinhardt">Reinhardt</option>
+                           <option value="Roadhog">Roadhog</option>
+                           <option value="Sigma">Sigma</option>
+                           <option value="Winston">Winston</option>
+                           <option value="WreckingBall">Wrecking Ball</option>
+                           <option value="Zarya">Zarya</option>
+
+                        </select><br>
+                      Support
+                        <select class="suppSelect">
+                          <option value="Ana">Ana</option>
+                          <option value="Baptiste">Baptiste</option>
+                          <option value="Brigitte">Brigitte</option>
+                          <option value="Lucio">Lucio</option>
+                          <option value="Mercy">Mercy</option>
+                          <option value="Moira">Moira</option>
+                          <option value="Zenyatta">Zenyatta</option>
+
+                        </select><br>
+                        <button class="clearHero">Clear</button>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="charBox">
+                      <div class="charCol">
+                        Hero:<div class="HeroName">-</div>
+                        Damage:<div class="HeroDPS">-</div>
+                        Health:<div class="HeroHealth">-</div>
+                        Ult Cost:<div class="UltCost">-</div>
+                      </div>
+                        <div class="charCol">
+                          DPS
+                          <select class="dpsSelect">
+                            <option value="Ashe">Ashe</option>
+                            <option value="Bastion">Bastion</option>
+                            <option value="Doomfist">Doomfist</option>
+                            <option value="Genji">Genji</option>
+                            <option value="Hanzo">Hanzo</option>
+                            <option value="Junkrat">Junkrat</option>
+                            <option value="Mei">Mei</option>
+                            <option value="Pharah">Pharah</option>
+                            <option value="Reaper">Reaper</option>
+                            <option value="Soldier76">Soldier: 76</option>
+                            <option value="Sombra">Sombra</option>
+                            <option value="Symmetra">Symmetra</option>
+                            <option value="Torbjorn">Torbjorn</option>
+                            <option value="Tracer">Tracer</option>
+                            <option value="Widowmaker">Widowmaker</option>
+
+
+                          </select><br>
+                          Tank
+                            <select class="tankSelect">
+                              <option value="Dva">Dva</option>
+                               <option value="Orisa">Orisa</option>
+                               <option value="Reinhardt">Reinhardt</option>
+                               <option value="Roadhog">Roadhog</option>
+                               <option value="Sigma">Sigma</option>
+                               <option value="Winston">Winston</option>
+                               <option value="WreckingBall">Wrecking Ball</option>
+                               <option value="Zarya">Zarya</option>
+
+                            </select><br>
+                          Support
+                            <select class="suppSelect">
+                              <option value="Ana">Ana</option>
+                              <option value="Baptiste">Baptiste</option>
+                              <option value="Brigitte">Brigitte</option>
+                              <option value="Lucio">Lucio</option>
+                              <option value="Mercy">Mercy</option>
+                              <option value="Moira">Moira</option>
+                              <option value="Zenyatta">Zenyatta</option>
+
+                            </select><br>
+                            <button class="clearHero">Clear</button>
+                        </div>
+                      </div>
+                      <br><br>
+                      <div class="charBox">
+                          <div class="charCol">
+                            Hero:<div class="HeroName">-</div>
+                            Damage:<div class="HeroDPS">-</div>
+                            Health:<div class="HeroHealth">-</div>
+                            Ult Cost:<div class="UltCost">-</div>
+                          </div>
+                            <div class="charCol">
+                              DPS
+                              <select class="dpsSelect">
+                                <option value="Ashe">Ashe</option>
+                                <option value="Bastion">Bastion</option>
+                                <option value="Doomfist">Doomfist</option>
+                                <option value="Genji">Genji</option>
+                                <option value="Hanzo">Hanzo</option>
+                                <option value="Junkrat">Junkrat</option>
+                                <option value="Mei">Mei</option>
+                                <option value="Pharah">Pharah</option>
+                                <option value="Reaper">Reaper</option>
+                                <option value="Soldier76">Soldier: 76</option>
+                                <option value="Sombra">Sombra</option>
+                                <option value="Symmetra">Symmetra</option>
+                                <option value="Torbjorn">Torbjorn</option>
+                                <option value="Tracer">Tracer</option>
+                                <option value="Widowmaker">Widowmaker</option>
+
+
+                              </select><br>
+                              Tank
+                                <select class="tankSelect">
+                                  <option value="Dva">Dva</option>
+                                   <option value="Orisa">Orisa</option>
+                                   <option value="Reinhardt">Reinhardt</option>
+                                   <option value="Roadhog">Roadhog</option>
+                                   <option value="Sigma">Sigma</option>
+                                   <option value="Winston">Winston</option>
+                                   <option value="WreckingBall">Wrecking Ball</option>
+                                   <option value="Zarya">Zarya</option>
+
+                                </select><br>
+                              Support
+                                <select class="suppSelect">
+                                  <option value="Ana">Ana</option>
+                                  <option value="Baptiste">Baptiste</option>
+                                  <option value="Brigitte">Brigitte</option>
+                                  <option value="Lucio">Lucio</option>
+                                  <option value="Mercy">Mercy</option>
+                                  <option value="Moira">Moira</option>
+                                  <option value="Zenyatta">Zenyatta</option>
+
+                                </select><br>
+                                <button class="clearHero">Clear</button>
+                            </div>
+                          </div>
+                          <br><br>
+                          <div class="charBox">
+                              <div class="charCol">
+                                Hero:<div class="HeroName">-</div>
+                                Damage:<div class="HeroDPS">-</div>
+                                Health:<div class="HeroHealth">-</div>
+                                Ult Cost:<div class="UltCost">-</div>
+                              </div>
+                                <div class="charCol">
+                                  DPS
+                                  <select class="dpsSelect">
+                                    <option value="Ashe">Ashe</option>
+                                    <option value="Bastion">Bastion</option>
+                                    <option value="Doomfist">Doomfist</option>
+                                    <option value="Genji">Genji</option>
+                                    <option value="Hanzo">Hanzo</option>
+                                    <option value="Junkrat">Junkrat</option>
+                                    <option value="Mei">Mei</option>
+                                    <option value="Pharah">Pharah</option>
+                                    <option value="Reaper">Reaper</option>
+                                    <option value="Soldier76">Soldier: 76</option>
+                                    <option value="Sombra">Sombra</option>
+                                    <option value="Symmetra">Symmetra</option>
+                                    <option value="Torbjorn">Torbjorn</option>
+                                    <option value="Tracer">Tracer</option>
+                                    <option value="Widowmaker">Widowmaker</option>
+
+
+                                  </select><br>
+                                  Tank
+                                    <select class="tankSelect">
+                                      <option value="Dva">Dva</option>
+                                       <option value="Orisa">Orisa</option>
+                                       <option value="Reinhardt">Reinhardt</option>
+                                       <option value="Roadhog">Roadhog</option>
+                                       <option value="Sigma">Sigma</option>
+                                       <option value="Winston">Winston</option>
+                                       <option value="WreckingBall">Wrecking Ball</option>
+                                       <option value="Zarya">Zarya</option>
+
+                                    </select><br>
+                                  Support
+                                    <select class="suppSelect">
+                                      <option value="Ana">Ana</option>
+                                      <option value="Baptiste">Baptiste</option>
+                                      <option value="Brigitte">Brigitte</option>
+                                      <option value="Lucio">Lucio</option>
+                                      <option value="Mercy">Mercy</option>
+                                      <option value="Moira">Moira</option>
+                                      <option value="Zenyatta">Zenyatta</option>
+
+                                    </select><br>
+                                    <button class="clearHero">Clear</button>
+                                </div>
+                              </div>
+                              <br><br>
+                              <div class="charBox">
+                                  <div class="charCol">
+                                    Hero:<div class="HeroName">-</div>
+                                    Damage:<div class="HeroDPS">-</div>
+                                    Health:<div class="HeroHealth">-</div>
+                                    Ult Cost:<div class="UltCost">-</div>
+                                  </div>
+                                    <div class="charCol">
+                                      DPS
+                                      <select class="dpsSelect">
+                                        <option value="Ashe">Ashe</option>
+                                        <option value="Bastion">Bastion</option>
+                                        <option value="Doomfist">Doomfist</option>
+                                        <option value="Genji">Genji</option>
+                                        <option value="Hanzo">Hanzo</option>
+                                        <option value="Junkrat">Junkrat</option>
+                                        <option value="Mei">Mei</option>
+                                        <option value="Pharah">Pharah</option>
+                                        <option value="Reaper">Reaper</option>
+                                        <option value="Soldier76">Soldier: 76</option>
+                                        <option value="Sombra">Sombra</option>
+                                        <option value="Symmetra">Symmetra</option>
+                                        <option value="Torbjorn">Torbjorn</option>
+                                        <option value="Tracer">Tracer</option>
+                                        <option value="Widowmaker">Widowmaker</option>
+
+
+                                      </select><br>
+                                      Tank
+                                        <select class="tankSelect">
+                                          <option value="Dva">Dva</option>
+                                           <option value="Orisa">Orisa</option>
+                                           <option value="Reinhardt">Reinhardt</option>
+                                           <option value="Roadhog">Roadhog</option>
+                                           <option value="Sigma">Sigma</option>
+                                           <option value="Winston">Winston</option>
+                                           <option value="WreckingBall">Wrecking Ball</option>
+                                           <option value="Zarya">Zarya</option>
+
+                                        </select><br>
+                                      Support
+                                        <select class="suppSelect">
+                                          <option value="Ana">Ana</option>
+                                          <option value="Baptiste">Baptiste</option>
+                                          <option value="Brigitte">Brigitte</option>
+                                          <option value="Lucio">Lucio</option>
+                                          <option value="Mercy">Mercy</option>
+                                          <option value="Moira">Moira</option>
+                                          <option value="Zenyatta">Zenyatta</option>
+
+                                        </select><br>
+                                        <button class="clearHero">Clear</button>
+                                    </div>
+                                  </div>
+                                  <br><br>
       </div>
       <div class="column">
         Team Two<br>
@@ -145,27 +404,282 @@
               </div>
             </div>
             <br><br>
-        <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div>
-        </div><br>
+            <div class="charBox">
+                <div class="charCol">
+                  Hero:<div class="HeroName">-</div>
+                  Damage:<div class="HeroDPS">-</div>
+                  Health:<div class="HeroHealth">-</div>
+                  Ult Cost:<div class="UltCost">-</div>
+                </div>
+                  <div class="charCol">
+                    DPS
+                    <select class="dpsSelect">
+                      <option value="Ashe">Ashe</option>
+                      <option value="Bastion">Bastion</option>
+                      <option value="Doomfist">Doomfist</option>
+                      <option value="Genji">Genji</option>
+                      <option value="Hanzo">Hanzo</option>
+                      <option value="Junkrat">Junkrat</option>
+                      <option value="Mei">Mei</option>
+                      <option value="Pharah">Pharah</option>
+                      <option value="Reaper">Reaper</option>
+                      <option value="Soldier76">Soldier: 76</option>
+                      <option value="Sombra">Sombra</option>
+                      <option value="Symmetra">Symmetra</option>
+                      <option value="Torbjorn">Torbjorn</option>
+                      <option value="Tracer">Tracer</option>
+                      <option value="Widowmaker">Widowmaker</option>
 
-        <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:
-          </div><div class="charCol">select:<br>pic</div>
-        </div><br>
-        <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div>
-        </div><br>
-        <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div>
-        </div><br>
-        <div class="charBox">
-          <div class="charCol">Hero:<br>Damage:<br>Speed:<br>Ult Damage:</div>
-          <div class="charCol">select:<br>pic</div>
-        </div><br>
+
+                    </select><br>
+                    Tank
+                      <select class="tankSelect">
+                        <option value="Dva">Dva</option>
+                         <option value="Orisa">Orisa</option>
+                         <option value="Reinhardt">Reinhardt</option>
+                         <option value="Roadhog">Roadhog</option>
+                         <option value="Sigma">Sigma</option>
+                         <option value="Winston">Winston</option>
+                         <option value="WreckingBall">Wrecking Ball</option>
+                         <option value="Zarya">Zarya</option>
+
+                      </select><br>
+                    Support
+                      <select class="suppSelect">
+                        <option value="Ana">Ana</option>
+                        <option value="Baptiste">Baptiste</option>
+                        <option value="Brigitte">Brigitte</option>
+                        <option value="Lucio">Lucio</option>
+                        <option value="Mercy">Mercy</option>
+                        <option value="Moira">Moira</option>
+                        <option value="Zenyatta">Zenyatta</option>
+
+                      </select><br>
+                      <button class="clearHero">Clear</button>
+                  </div>
+                </div>
+                <br><br>
+
+                <div class="charBox">
+                    <div class="charCol">
+                      Hero:<div class="HeroName">-</div>
+                      Damage:<div class="HeroDPS">-</div>
+                      Health:<div class="HeroHealth">-</div>
+                      Ult Cost:<div class="UltCost">-</div>
+                    </div>
+                      <div class="charCol">
+                        DPS
+                        <select class="dpsSelect">
+                          <option value="Ashe">Ashe</option>
+                          <option value="Bastion">Bastion</option>
+                          <option value="Doomfist">Doomfist</option>
+                          <option value="Genji">Genji</option>
+                          <option value="Hanzo">Hanzo</option>
+                          <option value="Junkrat">Junkrat</option>
+                          <option value="Mei">Mei</option>
+                          <option value="Pharah">Pharah</option>
+                          <option value="Reaper">Reaper</option>
+                          <option value="Soldier76">Soldier: 76</option>
+                          <option value="Sombra">Sombra</option>
+                          <option value="Symmetra">Symmetra</option>
+                          <option value="Torbjorn">Torbjorn</option>
+                          <option value="Tracer">Tracer</option>
+                          <option value="Widowmaker">Widowmaker</option>
+
+
+                        </select><br>
+                        Tank
+                          <select class="tankSelect">
+                            <option value="Dva">Dva</option>
+                             <option value="Orisa">Orisa</option>
+                             <option value="Reinhardt">Reinhardt</option>
+                             <option value="Roadhog">Roadhog</option>
+                             <option value="Sigma">Sigma</option>
+                             <option value="Winston">Winston</option>
+                             <option value="WreckingBall">Wrecking Ball</option>
+                             <option value="Zarya">Zarya</option>
+
+                          </select><br>
+                        Support
+                          <select class="suppSelect">
+                            <option value="Ana">Ana</option>
+                            <option value="Baptiste">Baptiste</option>
+                            <option value="Brigitte">Brigitte</option>
+                            <option value="Lucio">Lucio</option>
+                            <option value="Mercy">Mercy</option>
+                            <option value="Moira">Moira</option>
+                            <option value="Zenyatta">Zenyatta</option>
+
+                          </select><br>
+                          <button class="clearHero">Clear</button>
+                      </div>
+                    </div>
+                    <br><br>
+                    <div class="charBox">
+                        <div class="charCol">
+                          Hero:<div class="HeroName">-</div>
+                          Damage:<div class="HeroDPS">-</div>
+                          Health:<div class="HeroHealth">-</div>
+                          Ult Cost:<div class="UltCost">-</div>
+                        </div>
+                          <div class="charCol">
+                            DPS
+                            <select class="dpsSelect">
+                              <option value="Ashe">Ashe</option>
+                              <option value="Bastion">Bastion</option>
+                              <option value="Doomfist">Doomfist</option>
+                              <option value="Genji">Genji</option>
+                              <option value="Hanzo">Hanzo</option>
+                              <option value="Junkrat">Junkrat</option>
+                              <option value="Mei">Mei</option>
+                              <option value="Pharah">Pharah</option>
+                              <option value="Reaper">Reaper</option>
+                              <option value="Soldier76">Soldier: 76</option>
+                              <option value="Sombra">Sombra</option>
+                              <option value="Symmetra">Symmetra</option>
+                              <option value="Torbjorn">Torbjorn</option>
+                              <option value="Tracer">Tracer</option>
+                              <option value="Widowmaker">Widowmaker</option>
+
+
+                            </select><br>
+                            Tank
+                              <select class="tankSelect">
+                                <option value="Dva">Dva</option>
+                                 <option value="Orisa">Orisa</option>
+                                 <option value="Reinhardt">Reinhardt</option>
+                                 <option value="Roadhog">Roadhog</option>
+                                 <option value="Sigma">Sigma</option>
+                                 <option value="Winston">Winston</option>
+                                 <option value="WreckingBall">Wrecking Ball</option>
+                                 <option value="Zarya">Zarya</option>
+
+                              </select><br>
+                            Support
+                              <select class="suppSelect">
+                                <option value="Ana">Ana</option>
+                                <option value="Baptiste">Baptiste</option>
+                                <option value="Brigitte">Brigitte</option>
+                                <option value="Lucio">Lucio</option>
+                                <option value="Mercy">Mercy</option>
+                                <option value="Moira">Moira</option>
+                                <option value="Zenyatta">Zenyatta</option>
+
+                              </select><br>
+                              <button class="clearHero">Clear</button>
+                          </div>
+                        </div>
+                        <br><br>
+                        <div class="charBox">
+                            <div class="charCol">
+                              Hero:<div class="HeroName">-</div>
+                              Damage:<div class="HeroDPS">-</div>
+                              Health:<div class="HeroHealth">-</div>
+                              Ult Cost:<div class="UltCost">-</div>
+                            </div>
+                              <div class="charCol">
+                                DPS
+                                <select class="dpsSelect">
+                                  <option value="Ashe">Ashe</option>
+                                  <option value="Bastion">Bastion</option>
+                                  <option value="Doomfist">Doomfist</option>
+                                  <option value="Genji">Genji</option>
+                                  <option value="Hanzo">Hanzo</option>
+                                  <option value="Junkrat">Junkrat</option>
+                                  <option value="Mei">Mei</option>
+                                  <option value="Pharah">Pharah</option>
+                                  <option value="Reaper">Reaper</option>
+                                  <option value="Soldier76">Soldier: 76</option>
+                                  <option value="Sombra">Sombra</option>
+                                  <option value="Symmetra">Symmetra</option>
+                                  <option value="Torbjorn">Torbjorn</option>
+                                  <option value="Tracer">Tracer</option>
+                                  <option value="Widowmaker">Widowmaker</option>
+
+
+                                </select><br>
+                                Tank
+                                  <select class="tankSelect">
+                                    <option value="Dva">Dva</option>
+                                     <option value="Orisa">Orisa</option>
+                                     <option value="Reinhardt">Reinhardt</option>
+                                     <option value="Roadhog">Roadhog</option>
+                                     <option value="Sigma">Sigma</option>
+                                     <option value="Winston">Winston</option>
+                                     <option value="WreckingBall">Wrecking Ball</option>
+                                     <option value="Zarya">Zarya</option>
+
+                                  </select><br>
+                                Support
+                                  <select class="suppSelect">
+                                    <option value="Ana">Ana</option>
+                                    <option value="Baptiste">Baptiste</option>
+                                    <option value="Brigitte">Brigitte</option>
+                                    <option value="Lucio">Lucio</option>
+                                    <option value="Mercy">Mercy</option>
+                                    <option value="Moira">Moira</option>
+                                    <option value="Zenyatta">Zenyatta</option>
+
+                                  </select><br>
+                                  <button class="clearHero">Clear</button>
+                              </div>
+                            </div>
+                            <br><br>
+                            <div class="charBox">
+                                <div class="charCol">
+                                  Hero:<div class="HeroName">-</div>
+                                  Damage:<div class="HeroDPS">-</div>
+                                  Health:<div class="HeroHealth">-</div>
+                                  Ult Cost:<div class="UltCost">-</div>
+                                </div>
+                                  <div class="charCol">
+                                    DPS
+                                    <select class="dpsSelect">
+                                      <option value="Ashe">Ashe</option>
+                                      <option value="Bastion">Bastion</option>
+                                      <option value="Doomfist">Doomfist</option>
+                                      <option value="Genji">Genji</option>
+                                      <option value="Hanzo">Hanzo</option>
+                                      <option value="Junkrat">Junkrat</option>
+                                      <option value="Mei">Mei</option>
+                                      <option value="Pharah">Pharah</option>
+                                      <option value="Reaper">Reaper</option>
+                                      <option value="Soldier76">Soldier: 76</option>
+                                      <option value="Sombra">Sombra</option>
+                                      <option value="Symmetra">Symmetra</option>
+                                      <option value="Torbjorn">Torbjorn</option>
+                                      <option value="Tracer">Tracer</option>
+                                      <option value="Widowmaker">Widowmaker</option>
+
+
+                                    </select><br>
+                                    Tank
+                                      <select class="tankSelect">
+                                        <option value="Dva">Dva</option>
+                                         <option value="Orisa">Orisa</option>
+                                         <option value="Reinhardt">Reinhardt</option>
+                                         <option value="Roadhog">Roadhog</option>
+                                         <option value="Sigma">Sigma</option>
+                                         <option value="Winston">Winston</option>
+                                         <option value="WreckingBall">Wrecking Ball</option>
+                                         <option value="Zarya">Zarya</option>
+
+                                      </select><br>
+                                    Support
+                                      <select class="suppSelect">
+                                        <option value="Ana">Ana</option>
+                                        <option value="Baptiste">Baptiste</option>
+                                        <option value="Brigitte">Brigitte</option>
+                                        <option value="Lucio">Lucio</option>
+                                        <option value="Mercy">Mercy</option>
+                                        <option value="Moira">Moira</option>
+                                        <option value="Zenyatta">Zenyatta</option>
+
+                                      </select><br>
+                                      <button class="clearHero">Clear</button>
+                                  </div>
+                                </div>
+                                <br><br>
       </div>
     </div>
 

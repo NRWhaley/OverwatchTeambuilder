@@ -60,9 +60,9 @@ window.onload = function(){
 
 function clearHeroes(){
   let name = event.target.parentElement.parentElement.getElementsByClassName('HeroName')[0];
-  let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroPrimary')[0];
-  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroSecondary')[0];
-  let heal = event.target.parentElement.parentElement.getElementsByClassName('HeroHealing')[0]
+  let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroDPS')[0];
+  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroHealth')[0];
+  let heal = event.target.parentElement.parentElement.getElementsByClassName('UltCost')[0]
 
 
   name.textContent = '-'
@@ -86,12 +86,13 @@ function findChar(char){
 
 function addOnes(){
   let name = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroName')[0];
-  let dmg = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroDmg')[0];
+  let dps = event.target.parentElement.parentElement.getElementsByClassName('HeroDPS')[0];
   let char = event.target.value;
   let character = findChar(char)
   //console.log(character)
+
   name.textContent = '1'
-  dmg.textContent = '1'
+  dps.textContent = '1'
 
 
 

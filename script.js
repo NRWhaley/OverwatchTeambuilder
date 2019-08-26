@@ -5,7 +5,7 @@
 //support Ana, Baptiste, Brigitte, Lucio, Mercy, Moira, Zenyatta
 
 const heroes = [
-  {name: 'Ashe', primary: 40, secondary:  , healing:},
+  {name: 'Ashe', primary: 40, secondary:  , healing:, pic: },
   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
 
 

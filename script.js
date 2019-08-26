@@ -126,9 +126,9 @@ teamTotals();
 function teamTotals(){
 
 
-let dpsAverages = event.target.parentElement.parentElement.parentElement.getElementsByClassName('HeroDPS')
+let dpsAverages = document.getElementsByClassName('HeroDPS')
+console.log(dpsAverages[0].textContent)
 
-console.log(dpsAverages[0])
 
 }
 

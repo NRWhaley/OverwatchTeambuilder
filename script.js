@@ -1,10 +1,16 @@
 
+//tank D.Va, Orisa, Reinhardt,Roadhog,Sigma,Winston, Wrecking Ball, Zarya
+//dps Ashe, Bastion, Doomfist, Genji, Hanzo, Junkrat, McCree, Mei, Pharah, Reaper, Soldier: 76, Sombra, Symmetra,
+// Torbjorn, Tracer, Widowmaker
+//support Ana, Baptiste, Brigitte, Lucio, Mercy, Moira, Zenyatta
+
+
 
 window.onload = function(){
 
-  let hero = document.getElementsByClassName('addHero')
+  let hero = document.getElementsByClassName('clearHero')
     for(let i = 0; i < hero.length; i++){
-      hero[i].addEventListener('click', addHeroes)
+      hero[i].addEventListener('click', clearHeros)
     }
 
    let ones = document.getElementsByClassName('charSelect')
@@ -19,12 +25,18 @@ window.onload = function(){
 //let addtTwohOne = document.getElementById('addtTwohOne');
 
 
-function addHeroes(){
+function clearHeroes(){
   let name = event.target.parentElement.parentElement.getElementsByClassName('HeroName')[0];
   let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroDmg')[0];
+  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroSpd')[0];
+  let heal = event.target.parentElement.parentElement.getElementsByClassName('HeroHealing')[0]
 
-  name.textContent = 'Hi'
-  dmg.textContent = 'Bob'
+
+  name.textContent = '-'
+  dmg.textContent = '-'
+  spd.textContent = '-'
+  heal.textContent = '-'
+
 
 
 }

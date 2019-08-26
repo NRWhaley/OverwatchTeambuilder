@@ -5,8 +5,36 @@
 //support Ana, Baptiste, Brigitte, Lucio, Mercy, Moira, Zenyatta
 
 const heroes = [
-  {name: 'Ashe', primary: 40, secondary:  , healing:, pic: },
-  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+  {name: 'Ashe', primary: 160, health: 200 , ultCost: 2240, pic: },
+  {name: 'Ana', primary: 87.5, health: 200, ultCost: 2100, pic: },
+  {name: 'Baptiste', primary: 168.75, health: 200, ultCost: 1960},
+  {name: 'Bastion',},
+  {name: 'Brigitte',},
+  {name: 'Doomfist'},
+  {name: 'Dva'},
+  {name: 'Genji'},
+  {name: 'Hanzo'},
+  {name: 'Junkrat'},
+  {name: 'Lucio'},
+  {name: 'McCree'},
+  {name: 'Mei'},
+  {name: 'Mercy'},
+  {name: 'Moira'},
+  {name: 'Orisa'},
+  {name: 'Pharah'},
+  {name: 'Reaper'},
+  {name: 'Reinhardt'},
+  {name: 'Roadhog'},
+  {name: 'Sigma'},
+  {name: 'Soldier76'},
+  {name: 'Sombra'},
+  {name: 'Symmetra'},
+  {name: 'Torbjorn'},
+  {name: 'Tracer'},
+  {name: 'Widowmaker'},
+  {name: 'WreckingBall'},
+  {name: 'Zarya'},
+  {name: 'Zenyatta'}
 
 
 ]

@@ -10,10 +10,10 @@ window.onload = function(){
 
   let hero = document.getElementsByClassName('clearHero')
     for(let i = 0; i < hero.length; i++){
-      hero[i].addEventListener('click', clearHeros)
+      hero[i].addEventListener('click', clearHeroes)
     }
 
-   let ones = document.getElementsByClassName('charSelect')
+   let ones = document.getElementsByClassName('dpsSelect')
   for(let i = 0; i < ones.length; i++){
     ones[i].addEventListener('click', addOnes);
   }

@@ -4,7 +4,12 @@
 // Torbjorn, Tracer, Widowmaker
 //support Ana, Baptiste, Brigitte, Lucio, Mercy, Moira, Zenyatta
 
+const heroes = [
+  {name: 'Ashe', primary: 40, secondary:  , healing:},
+  {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
 
+
+]
 
 window.onload = function(){
 
@@ -27,8 +32,8 @@ window.onload = function(){
 
 function clearHeroes(){
   let name = event.target.parentElement.parentElement.getElementsByClassName('HeroName')[0];
-  let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroDmg')[0];
-  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroSpd')[0];
+  let dmg = event.target.parentElement.parentElement.getElementsByClassName('HeroPrimary')[0];
+  let spd = event.target.parentElement.parentElement.getElementsByClassName('HeroSecondary')[0];
   let heal = event.target.parentElement.parentElement.getElementsByClassName('HeroHealing')[0]
 
 

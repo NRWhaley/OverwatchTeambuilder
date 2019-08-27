@@ -127,9 +127,25 @@ function teamTotals(){
 
 
 let dpsAverages = document.getElementsByClassName('HeroDPS')
-   console.log(dpsAverages[0].textContent)
-
-
+  let teamOneDmgTotal = 0
+  let teamTwoDmgTotal = 0
+   for(let i = 0; i < 6; i++){
+     if(dpsAverages[i].textContent === '-'){
+       document.getElementById('teamOneTotal').textContent = 'Incomplete information'
+     }
+      teamOneDmgTotal += parseInt(dpsAverages[i].textContent)
+   }
+   for(let i = 6; i < dpsAverages.length; i++){
+     if(dpsAverages[i].textContent === '-'){
+       document.getElementById('teamTwoTotal').textContent = 'Incomplete information'
+     }
+     teamTwoDmgTotal += parseInt(dpsAverages[i].textContent)
+   }
+    console.log(teamOneDmgTotal)
+  let teamOneReport = document.getElementById('teamOneTotal').textContent
+  let teamTwoReport = document.getElementById('teamTwoTotal').textContent
+  document.getElementById('teamOneTotal').textContent = 'Average DMG ' + teamOneDmgTotal/6
+  teamTwoReport = 'Average DMG ' + teamTwoDmgTotal/6
 }
 
 

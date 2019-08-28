@@ -155,10 +155,16 @@ let ultAverages = document.getElementsByClassName('UltCost')
     }
 
 
-
-   document.getElementById('teamOneTotal').textContent = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec ' + (teamOneHealthTotal/6).toFixed() + ' avg health ' + (teamOneUltTotal/6).toFixed() + ' avg Ult Cost'
+      document.getElementById('teamOneTotal').textContent = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec ' + (teamOneHealthTotal/6).toFixed() + ' avg health ' + (teamOneUltTotal/6).toFixed() + ' avg Ult Cost'
    document.getElementById('teamTwoTotal').textContent = (teamTwoDmgTotal/6).toFixed() + ' Dmg/sec '  + (teamTwoHealthTotal/6).toFixed() + ' avg health ' + (teamTwoUltTotal/6).toFixed() + ' avg Ult Cost'
 
+   if(teamOneDmgTotal.toString() === 'NaN'){
+     document.getElementById('teamOneTotal').textContent = 'Insufficient information'
+   }
+
+   if(teamTwoDmgTotal.toString() === 'NaN'){
+    document.getElementById('teamTwoTotal').textContent = 'Insufficient information'
+  }
 
 }
 
@@ -169,4 +175,3 @@ let ultAverages = document.getElementsByClassName('UltCost')
 
 
 
-//add functionality to buttons for each box.

@@ -155,8 +155,8 @@ let ultAverages = document.getElementsByClassName('UltCost')
     }
 
 
-      document.getElementById('teamOneTotal').textContent = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec ' + (teamOneHealthTotal/6).toFixed() + ' avg health ' + (teamOneUltTotal/6).toFixed() + ' avg Ult Cost'
-   document.getElementById('teamTwoTotal').textContent = (teamTwoDmgTotal/6).toFixed() + ' Dmg/sec '  + (teamTwoHealthTotal/6).toFixed() + ' avg health ' + (teamTwoUltTotal/6).toFixed() + ' avg Ult Cost'
+      document.getElementById('teamOneTotal').innerHTML = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec ' + '<br>' + (teamOneHealthTotal/6).toFixed() + ' Avg Health ' + '<br>' + (teamOneUltTotal/6).toFixed() + ' avg Ult Cost'
+   document.getElementById('teamTwoTotal').innerHTML = (teamTwoDmgTotal/6).toFixed() +' Dmg/sec ' + '<br>' + (teamTwoHealthTotal/6).toFixed() + ' Avg Health ' + '<br>' + (teamTwoUltTotal/6).toFixed() + ' avg Ult Cost'
 
    if(teamOneDmgTotal.toString() === 'NaN'){
      document.getElementById('teamOneTotal').textContent = 'Insufficient information'

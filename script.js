@@ -127,19 +127,37 @@ function teamTotals(){
 
 
 let dpsAverages = document.getElementsByClassName('HeroDPS')
+let healthAverages = document.getElementsByClassName('HeroHealth')
+let ultAverages = document.getElementsByClassName('UltCost')
   let teamOneDmgTotal = 0
   let teamTwoDmgTotal = 0
+  let teamOneHealthTotal = 0;
+  let teamTwoHealthTotal = 0;
+  let teamOneUltTotal = 0;
+  let teamTwoUltTotal = 0;
    for(let i = 0; i < 6; i++){
       teamOneDmgTotal += parseInt(dpsAverages[i].textContent)
    }
    for(let i = 6; i < dpsAverages.length; i++){
      teamTwoDmgTotal += parseInt(dpsAverages[i].textContent)
    }
+   for(let i = 0; i < 6; i++){
+    teamOneHealthTotal += parseInt(healthAverages[i].textContent)
+    }
+    for(let i = 6; i < healthAverages.length; i++){
+   teamTwoHealthTotal += parseInt(healthAverages[i].textContent)
+    }
+    for(let i = 0; i < 6; i++){
+  teamOneUltTotal += parseInt(ultAverages[i].textContent)
+    }
+    for(let i = 6; i < ultAverages.length; i++){
+    teamTwoUltTotal += parseInt(ultAverages[i].textContent)
+    }
 
 
 
-   document.getElementById('teamOneTotal').textContent = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec'
-   document.getElementById('teamTwoTotal').textContent = (teamTwoDmgTotal/6).toFixed() + ' Dmg/sec'
+   document.getElementById('teamOneTotal').textContent = (teamOneDmgTotal/6).toFixed() + ' Dmg/sec ' + (teamOneHealthTotal/6).toFixed() + ' avg health ' + (teamOneUltTotal/6).toFixed() + ' avg Ult Cost'
+   document.getElementById('teamTwoTotal').textContent = (teamTwoDmgTotal/6).toFixed() + ' Dmg/sec '  + (teamTwoHealthTotal/6).toFixed() + ' avg health ' + (teamTwoUltTotal/6).toFixed() + ' avg Ult Cost'
 
 
 }

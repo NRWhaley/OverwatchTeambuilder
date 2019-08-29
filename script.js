@@ -85,6 +85,7 @@ function clearHeroes(){
   health.textContent = '-'
   ultCost.textContent = '-'
 
+  teamTotals()
 
 
 }

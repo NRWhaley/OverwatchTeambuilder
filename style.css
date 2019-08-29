@@ -46,7 +46,7 @@ header{
   display: flex;
   border-radius: 10px;
   justify-content: flex-start;
-  background-color: #218ffe;
+  background-color: #475275;
   border-style: solid;
   border-color: black;
   width: 75%;
@@ -64,23 +64,27 @@ header{
 }
 
 .suppSelect{
-
+  width: 50%;
+  border-radius: 7px;
 }
 
 .dpsSelect{
-
+  width: 50%;
+  border-radius: 7px;
 }
 
 .tankSelect{
-
+  width: 50%;
+  border-radius: 7px;
 }
 
 .clearHero{
   width: 50%;
   border-radius: 5px;
+  border-style: groove;
   background-color: #f99e1a;
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 75%;
 }
 
 #calculate{

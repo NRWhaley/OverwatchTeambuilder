@@ -68,14 +68,29 @@ header{
   border-radius: 7px;
 }
 
+.suppSelect:hover{
+  border-style: solid;
+  border-color: #f99e1a;
+}
+
 .dpsSelect{
   width: 50%;
   border-radius: 7px;
 }
 
+.dpsSelect:hover{
+  border-style: solid;
+  border-color: #f99e1a;
+}
+
 .tankSelect{
   width: 50%;
   border-radius: 7px;
+}
+
+.tankSelect:hover{
+  border-style: solid;
+  border-color: #f99e1a;
 }
 
 .clearHero{
@@ -85,6 +100,10 @@ header{
   background-color: #f99e1a;
   color: whitesmoke;
   font-size: 75%;
+}
+
+.clearHero:hover{
+  border-color: gray;
 }
 
 #calculate{

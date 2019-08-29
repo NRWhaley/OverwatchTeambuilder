@@ -56,13 +56,14 @@ header{
 
 
 
+
+
 .charCol{
   display: flex;
   justify-content: left;
   flex-direction: column;
   width: 50%;
 }
-
 .suppSelect{
   width: 50%;
   border-radius: 7px;

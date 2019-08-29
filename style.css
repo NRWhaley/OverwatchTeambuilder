@@ -1,6 +1,6 @@
 body{
   font-size: 150%;
-  background-color: steelblue;
+  background-color: #475275;
 
 
 }
@@ -15,27 +15,30 @@ header{
   justify-content: center;
   align-items: space-between;
   font-size: 50px;
+  color: whitesmoke;
 
 }
 
 .row{
   display: flex;
-  border-radius: 10px;
+  border-radius: 5px;
   max-width: 75%;
-  background-color: whitesmoke;
+  background-color: #43484c;
+  color: whitesmoke;
 }
 
 .column{
   display: flex;
-  border-radius: 5px;
+  border-radius: 10px;
   flex-direction: column;
-
+  background-color: #43484c;
   float: left;
   width: 50%;
 }
 
 .teamTotal{
   display: flex;
+  color: whitesmoke;
   width: 75%;
 }
 
@@ -43,7 +46,9 @@ header{
   display: flex;
   border-radius: 10px;
   justify-content: flex-start;
-  background-color: lightblue;
+  background-color: #218ffe;
+  border-style: solid;
+  border-color: black;
   width: 75%;
   height: 30%;
 
@@ -58,13 +63,24 @@ header{
   width: 50%;
 }
 
-.charSelect{
-  width: 50%;
-  border-radius: 5px;
+.suppSelect{
+
 }
 
-.charDelete{
+.dpsSelect{
+
+}
+
+.tankSelect{
+
+}
+
+.clearHero{
   width: 50%;
+  border-radius: 5px;
+  background-color: #f99e1a;
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 #calculate{
